@@ -11,7 +11,7 @@
 	<groupId>wm.demo</groupId>
 	<artifactId>lwm</artifactId>
 	<version>1.0</version>
-	<name>headerTest</name>
+	<name>wm-header</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

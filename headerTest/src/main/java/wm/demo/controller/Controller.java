@@ -57,13 +57,14 @@ public class Controller {
         Enumeration<String> en = request.getHeaderNames();
         while (en.hasMoreElements()) {
 			String name = (String) en.nextElement();
-			log.info("-------------key={},value={}",name,request.getHeader(name));
+			log.info("-------修改之前的header------key={},value={}",name,request.getHeader(name));
 		}
         log.info("------test2--header测试结束------");
         log.info("AlarmQueryController-->alarmNumQuery开始：入参"+ map.toString());
 		String result="";
-		String url="http://localhost:8080/test";
-		result = restTemplate.postForEntity(url, map, String.class).getBody();
+		//一个应用内如何发送post请求，模拟多应用测试？
+//		String url="http://localhost:8080/test";
+//		result = restTemplate.postForEntity(url, map, String.class).getBody();
 		return result;		
 	}
 }
