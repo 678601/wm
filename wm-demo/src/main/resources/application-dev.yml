@@ -1,0 +1,18 @@
+#logging.file: out.log
+name: dev
+myArray: 12,23,45,66
+#增加html后需要怎加的配置
+spring:
+ thymeleaf:
+    prefix: classpath:/static/
+    #Spring Boot官方文档建议在开发时将缓存关闭
+    cache: false
+#restTemplate setting
+#连接池的最大连接数默认为
+remote.maxTotalConnect: 100
+#单个主机的最大连接数
+remote.maxConnectPerRoute: 200
+#连接超时默认
+remote.connectTimeout: 2000
+ #读取超时默认
+remote.readTimeout: 20000

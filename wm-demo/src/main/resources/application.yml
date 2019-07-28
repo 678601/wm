@@ -1,0 +1,11 @@
+#去掉不必要的自动配置信息的后台日志打印
+logging:
+  level:
+    org.springframework.boot.autoconfigure:
+      ERROR 
+#激活的配置
+spring:
+  profiles:
+    active:     
+      dev
+  

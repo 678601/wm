@@ -1,0 +1,4 @@
+maxTotalConnect: 11
+maxConnectPerRoute: 12
+connectTimeout: 11
+readTimeout: 11
