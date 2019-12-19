@@ -31,6 +31,11 @@ public class Test {
  private final static Logger log = LoggerFactory.getLogger(Test.class);
  
 	public static void main(String[] args) throws ParseException {
+		String ss = "你好啊d";
+		System.out.println(ss.indexOf('好'));
+		Map<String,String> dd = new HashMap<String, String>();
+		dd.put("1", null);
+		System.out.println((dd.get("1")==null)+"--"+dd.size());
 		DecimalFormat df = new DecimalFormat("0.00%");
 		System.out.println(df.format(0/0.0));
 		List<String> ll =null;
@@ -274,7 +279,7 @@ public class Test {
 		map.put("10", "AAP平台告警");
 		map.put("11", "星云告警");
 		map.put("12", "海东青告警");
-		map.put("14", "树蛙告警");
+		map.put("14", "数云告警");
 		map.put("15", "PAAS告警");
 		log.info("map={}", map);
 		log.info("values={}", map.values());

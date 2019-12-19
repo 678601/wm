@@ -304,7 +304,7 @@ System.out.println("result="+result);
 			CHANNEL_MAP.put("10", "AAP平台告警");
 			CHANNEL_MAP.put("11", "星云告警");
 			CHANNEL_MAP.put("12", "海东青告警");
-			CHANNEL_MAP.put("14", "树蛙告警");
+			CHANNEL_MAP.put("14", "数云告警");
 			CHANNEL_MAP.put("15", "PAAS告警");
 			System.out.println(CHANNEL_MAP.values());
 			System.out.println(CHANNEL_MAP.values().toArray());

@@ -101,6 +101,7 @@ public class ElasticJobAutoConfiguration {
         return new JobEventRdbConfiguration(dataSource);
     }
 
+    
     /**
      * 获取作业任务类型
      *

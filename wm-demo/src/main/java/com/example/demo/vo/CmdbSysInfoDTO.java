@@ -23,12 +23,12 @@ import java.util.List;
  * 1、根据应用编码获取全部模块信息：key为sysinfo-module-应用编码，value为模块编码数据，用|分隔
  * <p>
  * 2、1）根据应用编码获取全部服务器ip：key为sysinfo-server-应用编码
- * 2）根据应用编码获取数据库（数蛙）服务器ip：key为sysinfo-server-db-应用编码
+ * 2）根据应用编码获取数据库（数云）服务器ip：key为sysinfo-server-db-应用编码
  * 3）根据应用编码获取非数据库（zabbix）服务器ip：key为sysinfo-server-other-应用编码
  * value均为ip数据，用|分隔
  * <p>
  * 3、1）根据模块编码获取全部服务器ip：key为sysmodule-server-模块编码
- * 2）根据模块编码获取数据库（数蛙）服务器ip：key为sysmodule-server-db-模块编码
+ * 2）根据模块编码获取数据库（数云）服务器ip：key为sysmodule-server-db-模块编码
  * 3）根据模块编码获取非数据库（zabbix）服务器ip：key为sysmodule-server-other-模块编码
  * value均为ip数据，用|分隔
  */

@@ -17,12 +17,9 @@ equals方法*/
 public class Employee {
 	private String name;
 	private Integer age;
+	private Integer age1;
 	private Double salary;
 
-	@Override
-	public String toString() {
-		return "Student [name=" + name + ", age=" + age + ", salary=" + salary + "]";
-	}
 
 	public String getName() {
 		return name;
@@ -53,6 +50,19 @@ public class Employee {
 		this.name = name;
 		this.age = age;
 		this.salary = salary;
+	}
+
+	public Integer getAge1() {
+		return age1;
+	}
+
+	public void setAge1(Integer age1) {
+		this.age1 = age1;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", age=" + age + ", age1=" + age1 + ", salary=" + salary + "]";
 	}
 
 }

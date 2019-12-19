@@ -24,11 +24,12 @@ public class InfluxdbSave {
 	public static void main(String[] args) throws ParseException {
 		for (int i = 0; i < 5; i++) {
 			AlarmMsgSendDetailDo detailDo = new AlarmMsgSendDetailDo();
-			detailDo.setService("test4299"+i);
+			detailDo.setService("test2019-11-13-"+i);
 			detailDo.setRuleCategory("03");
 			detailDo.setDestSys("AMP");
 			detailDo.setMetricType("2");
 			detailDo.setValue(1);
+//			detailDo.set
 			InfluxdbSave test = new InfluxdbSave();
 			test.writeAlarmStatistic(detailDo);
 		}
@@ -40,11 +41,11 @@ public class InfluxdbSave {
 //		String service = StringUtils.isEmpty(detail.getService()) ? "-" : detail.getService(); show continuous queries
 		String[] ppalarm = { "http://10.18.8.239:8086", "pp", "pp", "ppmonitor", "rp_30day", "alarmStatistic", "0" };
 		String[] esb = { "http://10.253.127.17:8086", "esb", "esb", "esbmonitor", "", "serviceInfo", "1" };
-		String[] ppservice = { "http://10.18.8.239:8086", "pp", "pp", "ppmonitor", "rp_1day",
+		String[] ppservice = { "http://10.18.8.239:8086", "pp", "pp", "ppmonitorNew", "rp_1day",
 				"serviceStatisticMinuteData", "2" };
 		String[] ppservice10day = { "http://10.18.8.239:8086", "pp", "pp", "ppmonitor", "rp_10day",
 				"serviceStatisticHourData", "2" };
-		String[] test = esb;
+		String[] test = ppservice;
 		// 时间
 		SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //		Date date = ft.parse("2019-06-20 01:40:10");
@@ -89,7 +90,7 @@ public class InfluxdbSave {
 			point = Point.measurement(test[5]).time(date.getTime(), TimeUnit.MILLISECONDS)
 					.tag("destSys", detail.getDestSys()).tag("destSysIP", detail.getRuleCategory())
 					.tag("service", detail.getService()).tag("destApp", detail.getMetricType())
-					.tag("oriSys", detail.getService()).tag("retMsgCode", detail.getService())
+					.tag("oriSys", detail.getService()).tag("retMsgCode", "0000")
 					.addField("requestCount", detail.getValue()).addField("responseTime", detail.getValue() + 10)
 					.build();
 		}

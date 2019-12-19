@@ -62,6 +62,14 @@ public class Controller {
         log.info("------test2--header测试结束------");
         log.info("AlarmQueryController-->alarmNumQuery开始：入参"+ map.toString());
 		String result="";
+		try {
+			int i=1/0;
+		} catch (Exception e) {
+			// TODO: handle exception
+			log.error("e="+e.getMessage());
+			log.error("----------------");
+//			log.error("e={}--{}",2,e);
+		}
 		//一个应用内如何发送post请求，模拟多应用测试？
 //		String url="http://localhost:8080/test";
 //		result = restTemplate.postForEntity(url, map, String.class).getBody();

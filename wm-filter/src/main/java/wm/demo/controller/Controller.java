@@ -34,8 +34,8 @@ public class Controller {
 	@ApiOperation(value = "测试value", notes = "测试notes")
 //    @ApiImplicitParam(name = "id", value = "学生ID", paramType = "path", required = true, dataType = "Integer")
 	public String test(@RequestBody @ApiParam(value = "参数描述信息str", required = true) Map<String,String> map) {
-		log.info("input parm = {}", map);
-
+		log.info("input parm = {}", map.toString());
+		
 		return "";
 	}
 

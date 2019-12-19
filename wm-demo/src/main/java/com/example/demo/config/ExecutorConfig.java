@@ -16,7 +16,7 @@ import com.example.demo.common.VisiableThreadPoolTaskExecutor;
  * 创建一个配置类ExecutorConfig，用来定义如何创建一个ThreadPoolTaskExecutor，要使用@Configuration和@EnableAsync这两个注解，表示这是个配置类，并且是线程池的配置类
  * 
  * @author LiWenming 2019年5月6日下午9:31:31
- */
+ */ 
 @Component
 @EnableAsync
 public class ExecutorConfig {
