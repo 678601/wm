@@ -44,7 +44,7 @@ public class Test1 {
 		System.out.println(str);
 		JSONArray array = JSONObject.parseArray(str);
 		System.out.println(array.toString());
-		JSONArray array1 = JSONObject.parseArray(str,true);
-		System.out.println(array1.toString());
+//		JSONArray array1 = JSONObject.parseArray(str,true); 
+//		System.out.println(array1.toString());
 	}
 }
