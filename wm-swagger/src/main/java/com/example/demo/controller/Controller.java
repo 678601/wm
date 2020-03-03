@@ -14,7 +14,8 @@ import io.swagger.annotations.ApiOperation;
 
 /**
  * 
- * @Description:   一个简单的模板
+ * @Description:   一个简单的模板,访问url=http://localhost:8082/wm/swagger-ui.html
+ * ip+端口/项目/swagger-ui.html
  * @author: LiWenming     
  * @date:   2020年3月3日 下午12:16:20   
  * @version V1.0
