@@ -7,7 +7,7 @@ package com.example.demo.utils.staticTest;
  * @author author
  * @date 2020-12-07 10:16:41
  */
-public class A {
+public class Parent {
 	public static String staticStr = "A静态属性";
 	public String nonStaticStr = "A非静态属性";
 
