@@ -1,2 +1,0 @@
-#server:#  servlet:#    context-path: /wm-dev#  port: 8081wm:  message: this is dev  NAME: WM  salaryDouble: 10.00  salary-increase: 3.00  FALL-NAME: LWM
-  

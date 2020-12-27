@@ -1,5 +1,0 @@
-maxTotalConnect: 11
-maxConnectPerRoute: 11
-connectTimeout: 11
-readTimeout: 11
-server.servlet.context-path: /wm-header

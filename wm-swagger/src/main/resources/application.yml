@@ -1,9 +1,0 @@
-# 1.x  server.context-path=/demo 
-# 2.x  server.servlet.context-path=/demo
-server:
-  servlet:
-    context-path: /wm
-  port: 8082
-spring:  profiles: 
-   active: dev
-  
