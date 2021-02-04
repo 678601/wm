@@ -21,7 +21,7 @@ import io.swagger.annotations.ApiOperation;
  */
 @Api(tags="常规测试")
 @RestController
-@RequestMapping("normal")
+@RequestMapping("normal1")
 public class NormalController {
 	//日志记录器应当是一个类内部的东西，不允许其子类或者其他类使用因此被private修饰为私有的。
 	//对于所有该类的对象也就是该类的所有实例只需要一个logger所以使用static修饰。
@@ -72,7 +72,7 @@ public class NormalController {
 	 * @date 2020-12-09 04:08:09
 	 */
 	@ApiOperation("验证")
-	@PostMapping("t1")
+	@PostMapping("t3")
 	public ResultVo test1(int key) {
 		ResultVo vo = new ResultVo();
 		int i=0;

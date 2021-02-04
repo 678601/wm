@@ -15,8 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
 	@PostMapping("test")
-	public String test() {
-		return "12";
+	public void test() {
+		int i=0;
+		while (i!=100000000){
+			i++;
+			System.out.println("----test----"+i);
+		}
 	}
 	
 	@PostMapping("test1")
